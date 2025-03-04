@@ -5,12 +5,12 @@ import Sidebar from "../components/Sidebar";
 
 export const Route = createRootRoute({
   component: () => (
-    <>
-      <div className="w-1/5 h-screen flex flex-col">
+    <div className="flex flex-row">
+      <div className="w-1/5 h-screen">
         <Sidebar />
       </div>
       <Outlet />
       <TanStackRouterDevtools />
-    </>
+    </div>
   ),
 });
